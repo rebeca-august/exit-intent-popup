@@ -1,0 +1,106 @@
+:root {
+  --main-red-color: #f23a1d;
+}
+
+body {
+  margin: 0;
+}
+
+.exit-intent-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(33, 33, 33, 0.8);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+
+.popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  max-width: 400px;
+  height: 75vh;
+  background-color: whitesmoke;
+}
+
+.close-btn {
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.close-btn:hover {
+  color: var(--main-red-color);
+}
+
+.image {
+  width: 100%;
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://www.merkleinc.com/emea/sites/emea/files/2021-07/campaign-creators-yktK2qaiVHI-unsplash.jpg');
+}
+
+.popup-text {
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1 0;
+  text-align: center;
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+.title {
+  margin: 0;
+  color: var(--main-red-color);
+  letter-spacing: 2px;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid var(--main-red-color);
+}
+
+.left-btn,
+.right-btn {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  font-size: 0.8em;
+  color: grey;
+  letter-spacing: 2px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.right-btn {
+  color: var(--main-red-color);
+}
+
+.right-btn > a {
+  text-decoration: none;
+  color: inherit;
+}
